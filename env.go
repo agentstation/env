@@ -18,8 +18,10 @@ var (
 const (
 	// PROD is the production environment
 	PROD Environment = "PROD"
+
 	// STAGE is the staging environment
 	STAGE Environment = "STAGE"
+
 	// DEV is the development environment
 	DEV Environment = "DEV"
 )
