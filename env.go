@@ -1,4 +1,4 @@
-// Package env provides a structure around the environment setting that the web application is running in.
+// Package env provides a structure for setting and identifying the environment an application is running in.
 package env
 
 import (
