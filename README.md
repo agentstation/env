@@ -4,6 +4,14 @@
                          |  __/ | | | | \ V / 
                           \___| |_| |_|  \_/  
 ```
+<!-- [![Sourcegraph](https://sourcegraph.com/github.com/agentstation/env/-/badge.svg?style=flat-square)](https://sourcegraph.com/github.com/agentstation/env?badge) -->
+[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/agentstation/env)
+[![Go Report Card](https://goreportcard.com/badge/github.com/agentstation/env?style=flat-square)](https://goreportcard.com/report/github.com/agentstation/env)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/agentstation/env/ci.yaml?style=flat-square)](https://github.com/agentstation/env/actions)
+[![codecov](https://codecov.io/gh/agentstation/env/branch/master/graph/badge.svg?token=35UM5QX1Q3)](https://codecov.io/gh/agentstation/env)
+[![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/agentstation/env/master/LICENSE)
+<!-- [![Forum](https://img.shields.io/badge/community-forum-00afd1.svg?style=flat-square)](https://github.com/agentstation/env/discussions) -->
+<!-- [![Twitter](https://img.shields.io/badge/twitter-@agentstationHQ-55acee.svg?style=flat-square)](https://twitter.com/agentstationHQ) -->
 
 <!-- gomarkdoc:embed:start -->
 
@@ -30,7 +38,7 @@ Package env provides a structure around the environment setting that the web app
 
 
 <a name="Set"></a>
-## func [Set](<https://github.com/agentstation/uuidkey/blob/master/env.go#L72>)
+## func [Set](<https://github.com/agentstation/env/blob/master/env.go#L74>)
 
 ```go
 func Set(env Environment)
@@ -39,7 +47,7 @@ func Set(env Environment)
 Set sets the current environment
 
 <a name="Environment"></a>
-## type [Environment](<https://github.com/agentstation/uuidkey/blob/master/env.go#L11>)
+## type [Environment](<https://github.com/agentstation/env/blob/master/env.go#L11>)
 
 Environment represents the application environment
 
@@ -53,15 +61,17 @@ type Environment string
 const (
     // PROD is the production environment
     PROD Environment = "PROD"
+
     // STAGE is the staging environment
     STAGE Environment = "STAGE"
+
     // DEV is the development environment
     DEV Environment = "DEV"
 )
 ```
 
 <a name="Current"></a>
-### func [Current](<https://github.com/agentstation/uuidkey/blob/master/env.go#L79>)
+### func [Current](<https://github.com/agentstation/env/blob/master/env.go#L81>)
 
 ```go
 func Current() Environment
@@ -70,7 +80,7 @@ func Current() Environment
 Current returns the current environment
 
 <a name="Parse"></a>
-### func [Parse](<https://github.com/agentstation/uuidkey/blob/master/env.go#L51>)
+### func [Parse](<https://github.com/agentstation/env/blob/master/env.go#L53>)
 
 ```go
 func Parse(env string) Environment
@@ -79,7 +89,7 @@ func Parse(env string) Environment
 Parse converts a string to an Environment type
 
 <a name="Environment.IsDev"></a>
-### func \(Environment\) [IsDev](<https://github.com/agentstation/uuidkey/blob/master/env.go#L42>)
+### func \(Environment\) [IsDev](<https://github.com/agentstation/env/blob/master/env.go#L44>)
 
 ```go
 func (e Environment) IsDev() bool
@@ -88,7 +98,7 @@ func (e Environment) IsDev() bool
 IsDev returns true if the Environment is DEV
 
 <a name="Environment.IsProd"></a>
-### func \(Environment\) [IsProd](<https://github.com/agentstation/uuidkey/blob/master/env.go#L48>)
+### func \(Environment\) [IsProd](<https://github.com/agentstation/env/blob/master/env.go#L50>)
 
 ```go
 func (e Environment) IsProd() bool
@@ -97,7 +107,7 @@ func (e Environment) IsProd() bool
 IsProd returns true if the Environment is PROD
 
 <a name="Environment.IsStage"></a>
-### func \(Environment\) [IsStage](<https://github.com/agentstation/uuidkey/blob/master/env.go#L45>)
+### func \(Environment\) [IsStage](<https://github.com/agentstation/env/blob/master/env.go#L47>)
 
 ```go
 func (e Environment) IsStage() bool
@@ -106,7 +116,7 @@ func (e Environment) IsStage() bool
 IsStage returns true if the Environment is STAGE
 
 <a name="Environment.String"></a>
-### func \(Environment\) [String](<https://github.com/agentstation/uuidkey/blob/master/env.go#L28>)
+### func \(Environment\) [String](<https://github.com/agentstation/env/blob/master/env.go#L30>)
 
 ```go
 func (e Environment) String() string
